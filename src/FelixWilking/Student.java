@@ -1,4 +1,5 @@
 package FelixWilking;
+//yes
 
 public abstract class Student extends Person{
     double GPA;
