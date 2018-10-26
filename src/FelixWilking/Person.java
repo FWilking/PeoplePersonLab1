@@ -7,6 +7,11 @@ public abstract class Person {
         this.firstName=firstName;
         this.lastName=lastName;
     }
+
+    public Person() {
+
+    }
+
     public String getFirstName(){
         return firstName;
     }
