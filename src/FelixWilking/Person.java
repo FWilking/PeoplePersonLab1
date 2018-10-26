@@ -12,7 +12,10 @@ public abstract class Person {
         this.lastName=lastName;
     }
 
-    //methods - Getters
+    public Person() {
+
+    }
+
     public String getFirstName(){
         return firstName;
     }
