@@ -26,11 +26,14 @@ public abstract class Person {
     //methods - Setters
     public abstract String toString();
     public boolean equals(Person p){
-        if(firstName.equals(lastName)){
-            return true;
-        }else{
-            return false;
-        }
+        return firstName.equals(lastName);
     }
-    
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 }

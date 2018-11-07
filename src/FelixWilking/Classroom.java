@@ -4,12 +4,24 @@ public abstract class Classroom extends Person {
    private teacher teacher;
    private Student[] student;
 
-    public Classroom (Student[] student, teacher teacher; ) {
+    @Override
+    public String getFirstName() {
+        return super.getFirstName();
+    }
+
+    @Override
+    public String getLastName() {
+        return super.getLastName();
+    }
+
+    public Classroom (Student[] student, teacher teacher ) {
         super(firstName, lastName);
         this.student = student;
         this.teacher = teacher;
     }
-    public String getSubject() { return subject(); }
+    //no idea how the firstName and lastName referencing works
+    //it would not reference the subject
+    public String getSubject() { return super(subject);}
     }
 
 }

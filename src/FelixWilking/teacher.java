@@ -4,7 +4,7 @@ public abstract class teacher extends Person {
 
     //Fields
     private String title;      //Mr,Ms,Mx,Mrs
-    private String subject;
+    String subject;
 
     //Constructors
     public teacher(String firstName, String lastName, String title)
@@ -25,4 +25,8 @@ public abstract class teacher extends Person {
     //methods - Setters
     public void setTitle(String title) { this.title = title; }
     public void setSubject(String subject) { this.subject = subject; }
+
+    public String subject(){
+        return subject;
+    }
 }
